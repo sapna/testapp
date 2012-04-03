@@ -1,0 +1,15 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Name:</b>
+  <%= @user.name %>
+</p>
+
+<p>
+  <b>City:</b>
+  <%= @user.email %>
+</p>
+<p><%= image_tag avatars_user_url(@user, :style => 'small' ) %></p>
+<%#= image_tag avatars_user_url(@user) %>
+<%= link_to 'Edit', edit_user_path(@user) %> |
+<%= link_to 'Back', users_path %>
